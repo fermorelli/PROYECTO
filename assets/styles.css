@@ -1,0 +1,30 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background: rgb(128,128,128);
+background: radial-gradient(circle, rgba(128,128,128,1) 0%, rgba(29,29,29,1) 49%, rgba(0,0,0,1) 86%);
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.bannertotal{
+    border: 1px solid white;
+    width: 100vw;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.enlaces{
+    text-decoration: none;
+    color: white;
+} 
