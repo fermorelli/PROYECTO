@@ -10,8 +10,11 @@ h1{
     text-align: center;
     text-transform: uppercase;
 }
+h2{
+    text-transform: capitalize;
+}
 .bannertotal{
-    border: 1px solid white;
+    background-color: rgba(0,0,0,0.3);
     width: 100vw;
     box-sizing: border-box;
     color: whitesmoke;
@@ -23,8 +26,75 @@ h1{
     justify-content: space-evenly;
     align-items: flex-end;
     box-sizing: border-box;
+    text-transform: capitalize;
+}
+.cajas{
+    background-color: lightblue;
+    width: 100px;
+    text-align: center;
+    height: 25px;
+    border-radius: 15px;
+    margin-bottom: 1em;
+}
+.cajas:hover{
+    transform: scale(110%);
 }
 .enlaces{
     text-decoration: none;
-    color: white;
+    color: rgb(112, 52, 202);
+    font-weight: bold;
+    font-size : 0.8em;
 } 
+
+.contenido-home{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 2em;
+}
+.foto-home{
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.contenedor{
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: space-between;
+    grid-gap: 3px;
+}
+.imagenes--galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenes-galeria:nth-child(2){
+    grid-column: span 2;
+}
+.imagenes-galeria:nth-child(4){
+    grid-column: span 2;
+}
+.imagenes-galeria:nth-child(5){
+    grid-column: span 2;
+}
+
+.imagenes-galeria:nth-child(10){
+    grid-column: span 2;
+}
+
+@media (max-width: 410px){
+    .cajas{
+        background-color: lightblue;
+        width: 70px;
+        text-align: center;
+        height: 25px;
+        border-radius: 15px;
+        margin-bottom: 1em;
+    }
+}
